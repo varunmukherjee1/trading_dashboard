@@ -1,0 +1,203 @@
+.div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container > div:first-of-type {
+    justify-content: space-between;
+    margin-bottom: 2.1rem;
+}
+
+.container > div:last-of-type {
+    justify-content: flex-end;
+}
+
+.inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+.input {
+    position: relative;
+}
+
+.input input {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 5px;
+    outline: none;
+    border: 1.5px solid #8F8F8F;
+    border-radius: 2px;
+}
+
+.input label {
+    position: absolute;
+    top: -7px;
+    left: 1rem;
+    padding: 0 1px;
+    color:#8F8F8F;
+    font-weight: 500;
+    font-size: 10px;
+    background-color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.stats {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats li > p {
+    color: #888888;
+}
+
+.stats li > div {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.stats li div > p:first-of-type {
+    font-size: 1.5rem;
+}
+
+.stats .percent {
+    color: var(--pri-green);
+}
+
+.options {
+    display: flex;
+    list-style: none;
+    gap: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+.options .head {
+    font-size: 1.3rem;
+    color: #888888;
+    display: flex;
+    align-items: center;
+}
+
+.options .head > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.options .head img {
+    height: 1rem;
+    width: 1rem;
+    object-fit: contain;
+}
+
+.options .head > div img:first-of-type {
+    transform: rotate(180deg);
+    gap: 4px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+}
+
+.filters div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer
+}
+
+.basket{
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.basket button {
+    background-color: var(--pri-blue);
+    padding: 7px 30px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.basket button:hover {
+    background-color: #214ae0;
+}
+
+.basket p {
+    position: absolute;
+    background-color: #F8EB77;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    transform: translate(50%,-50%);
+}
+
+.buttons {
+    gap: 9px;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttons > button:first-of-type{
+    background-color: var(--pri-blue);
+    color: white;
+}
+
+.buttons > button:first-of-type:hover{
+    background-color: #214ae0;
+}
+
+.buttons > button:last-of-type{
+    background-color: #E1E1E1;
+}
+
+.buttons > button:last-of-type:hover{
+    background-color: #cfcfcf;
+}
